@@ -1,0 +1,178 @@
+css resets
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* general style rules */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16 px;
+    padding: 0;
+    margin: 0;
+    background-color:  white;
+    color: black;
+}
+header {
+    background-color: black;
+    padding: 15px 30px;
+    color: white;
+    font-style: normal;
+    font: 200;
+}
+header h1 {
+    text-align: center;
+    font-size: 30px;
+}
+header p {
+    text-align: center;
+    font-size: 15px;
+}
+main{
+    min-height: 500px;
+}
+form {
+    margin: 130px auto;
+    width: 30%;
+    background-color: gainsboro;
+    border-radius: 2px ;
+    padding: 10px;
+    align-content: center;
+}
+.items {
+    margin: 30px auto;
+    width: 65%;
+}
+.items h3 {
+    text-align: center;
+    margin: 0;
+}
+.items p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.emailbox {
+    width: 250px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    display: block;
+    padding: 15px 20px;
+    margin: 0 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;   
+}
+.enter {
+    width: 150px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 0 50px;
+    box-sizing: border-box;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+} 
+
+
+@media screen and (max-width: 765px) {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background-color:  white;
+    color: black;
+}
+header {
+    background-color: black;
+    padding: 10px 25px;
+    color: white;
+    font-style: normal;
+    font: 100;
+}
+header h1 {
+    text-align: center;
+    font-size: 20px;
+}
+header p {
+    text-align: center;
+    font-size: 13px;
+}
+main{
+    min-height: 450px;
+}
+form {
+    margin: 70px auto;
+    width: 70%;
+    background-color: gainsboro;
+    border-radius: 2px ;
+    padding: 20px;
+    align-content: center;
+}
+.items {
+    margin: 10px auto;
+    width: 80%;
+}
+.items h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.items p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.emailbox {
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    margin-bottom: 5px;
+    box-sizing: border-box;   
+}
+.enter {
+    width: 120px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 0 35px;
+    box-sizing: border-box;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 50px;
+  margin: 0 auto 10px;
+}   
+}
