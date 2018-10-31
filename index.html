@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="./css/custom.css">
     <!-- font Awesome cdn -->      
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Ingressive Weekly | Subscription page</title>
 </head>
 <body>
     <div>
         <header>
-            <img src="https://res.cloudinary.com/fixninja/image/upload/v1540614267/fixninja%20img/ingressive-weekly/ingressive%20logo.png" alt="ingressive-logo">
-            <h1>Ingressive Weekly</h1>
-            <p>The Ingressive community plug for information and resources.</p>
+             <img src="https://res.cloudinary.com/fixninja/image/upload/v1540614267/fixninja%20img/ingressive-weekly/ingressive%20logo.png" alt="ingressive-logo" class="logo"> 
+            <div class="title">
+                <h1>Ingressive Weekly</h1>
+                <p>The Ingressive community plug for information and resources.</p>
+                <br>
+                <div class="connection">
+                    <a href=""><i class="fab fa-twitter"></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-slack"></a>
+                </div>
+            </div>
         </header>
         <main>
-            <form action="">
+                <form name="myForm" action="" onsubmit="return validateForm()" method="post">
                <div class="items">
                    <h3>Ingressive Weekly <br> Newsletter </h3>
                    <p>Subscribe to get updates in your inbox.</p>
-                <input type="email" placeholder="hello@example.com" class="emailbox"> <br>
-                <input type="button" value="subscribe" class="enter">
+                <input type="email" placeholder="hello@example.com" class="emailbox" name="email" required> <br>
+                <input type="submit" value="subscribe" class="submit">
                </div>
             </form>
         </main>
-        <article>
-            <div>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-            </div>
-        </article>
         <footer>
           <img src="https://res.cloudinary.com/fixninja/image/upload/v1540614267/fixninja%20img/ingressive-weekly/ingressive%20logo.png" alt="Logo"> 
          
@@ -41,5 +43,15 @@
           <br>
       </footer>
     </div>
+    <script>
+        // form validation with javascript
+        function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("please enter your email address.");
+        return false;
+    }
+}
+    </script>
 </body>
 </html>
