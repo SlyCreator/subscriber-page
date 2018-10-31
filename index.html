@@ -44,14 +44,15 @@
       </footer>
     </div>
     <script>
-        // form validation with javascript
-        function validateForm() {
+    /* form validation with javascript that prompts user when
+    the email text box is empty or not properly filled */
+    function validateForm() {
     var x = document.forms["myForm"]["email"].value;
     if (x == null || x == "") {
         alert("please enter your email address.");
         return false;
+        }
     }
-}
     </script>
 </body>
 </html>
